@@ -15,6 +15,8 @@ from project root directory
 ```
 after successful build run the project
 
+for redis template the bean is created.You just need to use it for direct execution on redis such as list,set,value etc
+
 ```
 java -jar <jarfile>
 
