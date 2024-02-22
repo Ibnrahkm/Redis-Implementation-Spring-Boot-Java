@@ -22,6 +22,27 @@ public class APIController {
         return service.addUser(new Gson().fromJson(data, User.class));
     }
 
+    @PostMapping("/updateUser")
+    public Response updateUser(@RequestBody String data) {
+        return service.updateUser(new Gson().fromJson(data, User.class));
+    }
+
+    @GetMapping("/getUser")
+    public Response getUser(@RequestParam("id") String id) {
+        return service.getUser(id);
+    }
+
+
+    @PostMapping("/deleteUser")
+    public Response deleteUser(@RequestParam("id") String id) {
+        return service.deleteUser(id);
+    }
+
+    @PostMapping("/getUsersByFilter")
+    public Response getUsersByFilter(@RequestParam("balance") String balance) {
+        return service.getUserListByFilter(balance);
+    }
+
     @GetMapping("/getUsers")
     public Response getUsers() {
         return service.getUserList();

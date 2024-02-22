@@ -26,4 +26,6 @@ public class User extends BaseEntity implements Serializable {
     private String lastname;
     @Column(name = "email", unique = true, nullable = false)
     private String email;
+    @Column(name = "balance", nullable = false)
+    private String balance;
 }
