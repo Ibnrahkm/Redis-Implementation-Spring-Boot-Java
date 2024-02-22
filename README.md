@@ -1,10 +1,3 @@
-
-# Redis implementation spring boot
-
-Start redis docker
-
-
-
 # Redis implementation spring boot
 
 start redis docker
